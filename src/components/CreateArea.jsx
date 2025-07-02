@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { IoMdAdd  } from "react-icons/io";
 
 function CreateArea({onAdd}){
 
@@ -37,7 +38,7 @@ function CreateArea({onAdd}){
                 
                     </textarea>
                 </p>
-                <button onClick={submitButton}>Add</button>
+                <button onClick={submitButton}><IoMdAdd size={28}/></button>
             </form>
         </div>
     )
