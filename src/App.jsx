@@ -49,6 +49,7 @@ import Contact from "./pages/Contact";
 import Notes from "./components/Notes/Notes";
 import CreateNote from "./components/Notes/CreateNote";
 import Profile from "./pages/Profile";
+import LandingPage from "./components/LandingPage";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 
@@ -57,6 +58,7 @@ const App = () => {
     <>
       <Navbar />
       <Routes>
+        <Route path="/" element={<LandingPage />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
