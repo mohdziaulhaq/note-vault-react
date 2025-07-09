@@ -1,0 +1,8 @@
+// Example: About.jsx
+import React from "react";
+
+const Profile = () => {
+  return <div className="p-4 text-xl">About Page</div>;
+};
+
+export default Profile;
