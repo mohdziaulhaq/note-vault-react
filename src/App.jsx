@@ -46,10 +46,9 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Notes from "./pages/Notes";
-import CreateNote from "./pages/CreateNote";
+import Notes from "./components/Notes/Notes";
+import CreateNote from "./components/Notes/CreateNote";
 import Profile from "./pages/Profile";
-import AdminUsers from "./pages/AdminUsers";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 
@@ -64,7 +63,6 @@ const App = () => {
         <Route path="/notes" element={<Notes />} />
         <Route path="/create-note" element={<CreateNote />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/admin/users" element={<AdminUsers />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
