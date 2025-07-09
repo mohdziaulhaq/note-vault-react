@@ -12,16 +12,16 @@ Note Vault React is a modern, high-performance starter template designed for bui
 
 ## Built with the tools and technologies:
 
-![JSON](https://img.shields.io/badge/JSON-black?style=for-the-badge&logo=json)
-![Markdown](https://img.shields.io/badge/Markdown-black?style=for-the-badge&logo=markdown)
-![npm](https://img.shields.io/badge/npm-red?style=for-the-badge&logo=npm)
-![Autoprefixer](https://img.shields.io/badge/Autoprefixer-orange?style=for-the-badge&logo=autoprefixer)
-![PostCSS](https://img.shields.io/badge/PostCSS-red?style=for-the-badge&logo=postcss)
-![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript)
-![React](https://img.shields.io/badge/React-blue?style=for-the-badge&logo=react)
-![Vite](https://img.shields.io/badge/Vite-purple?style=for-the-badge&logo=vite)
-![ESLint](https://img.shields.io/badge/ESLint-purple?style=for-the-badge&logo=eslint)
-![Axios](https://img.shields.io/badge/Axios-blue?style=for-the-badge&logo=axios)
+![JSON](https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat-square&logo=markdown&logoColor=white)
+![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white)
+![Autoprefixer](https://img.shields.io/badge/Autoprefixer-DD3A0A?style=flat-square&logo=autoprefixer&logoColor=white)
+![PostCSS](https://img.shields.io/badge/PostCSS-DD3A0A?style=flat-square&logo=postcss&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=flat-square&logo=axios&logoColor=white)
 
 ## Why note-vault-react?
 
@@ -104,6 +104,15 @@ npm test
 - **JWT Authentication**: Secure user authentication system
 - **Responsive Design**: Mobile-first approach for all devices
 - **Component-Based Architecture**: Reusable and maintainable code structure
+
+## Author
+
+**Zia Ul Haq Mohammed**
+- 🌐 Portfolio: [mohdziaulhaq.netlify.app](https://mohdziaulhaq.netlify.app)
+- 💼 LinkedIn: [linkedin.com/in/mohdziaulhaq](https://www.linkedin.com/in/mohdziaulhaq/)
+- 📧 Email: [mohdziaulhaq123@gmail.com](mailto:mohdziaulhaq123@gmail.com)
+- 🐱 GitHub: [@mohdziaulhaq](https://github.com/mohdziaulhaq)
+- 📁 Project Repository: [note-vault-react](https://github.com/mohdziaulhaq/note-vault-react)
 
 ## Contributing
 
