@@ -51,7 +51,7 @@ import CreateNote from "./components/Notes/CreateNote";
 import Profile from "./pages/Profile";
 import LandingPage from "./components/LandingPage";
 import Login from "./components/Auth/Login";
-import Signup from "./pages/Signup";
+import Signup from "./components/Auth/Signup";
 
 const App = () => {
   return (
