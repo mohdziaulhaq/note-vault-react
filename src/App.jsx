@@ -50,7 +50,7 @@ import Notes from "./components/Notes/Notes";
 import CreateNote from "./components/Notes/CreateNote";
 import Profile from "./pages/Profile";
 import LandingPage from "./components/LandingPage";
-import Login from "./pages/Login";
+import Login from "./components/Auth/Login";
 import Signup from "./pages/Signup";
 
 const App = () => {
