@@ -1,4 +1,3 @@
-// Example: About.jsx
 import React, {useState, useEffect} from "react";
 import {useForm} from "react-hook-form";
 import {Link, useNavigate} from "react-router-dom";
@@ -127,7 +126,139 @@ const Login = () => {
   //step 1 renders login page and step 2 renders 2fa form
   return (
   <div className="min-h-[calc(100vh-74px)] flex justify-center items-center">
-    About Page</div>);
+    
+    {step === 1 ? (
+    <React.Fragment>
+      <form
+            onSubmit={handleSubmit(onLoginHandler)}
+            className="sm:w-[450px] w-[360px]  shadow-custom py-8 sm:px-8 px-4"
+          >
+            <div>
+              <h1 className="font-montserrat text-center font-bold text-2xl">
+                Login Here
+              </h1>
+              <p className="text-slate-600 text-center">
+                Please Enter your username and password{" "}
+              </p>
+              <div className="flex items-center justify-between gap-1 py-5 ">
+                <Link
+                  to={`${apiUrl}/oauth2/authorization/google`}
+                  className="flex gap-1 items-center justify-center flex-1 border p-2 shadow-sm shadow-slate-200 rounded-md hover:bg-slate-300 transition-all duration-300"
+                >
+                  <span>
+                    <FcGoogle className="text-2xl" />
+                  </span>
+                  <span className="font-semibold sm:text-customText text-xs">
+                    Login with Google
+                  </span>
+                </Link>
+                <Link
+                  to={`${apiUrl}/oauth2/authorization/github`}
+                  className="flex gap-1 items-center justify-center flex-1 border p-2 shadow-sm shadow-slate-200 rounded-md hover:bg-slate-300 transition-all duration-300"
+                >
+                  <span>
+                    <FaGithub className="text-2xl" />
+                  </span>
+                  <span className="font-semibold sm:text-customText text-xs">
+                    Login with Github
+                  </span>
+                </Link>
+              </div>
+
+              <Divider className="font-semibold">OR</Divider>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <InputField
+                label="UserName"
+                required
+                id="username"
+                type="text"
+                message="*UserName is required"
+                placeholder="type your username"
+                register={register}
+                errors={errors}
+              />{" "}
+              <InputField
+                label="Password"
+                required
+                id="password"
+                type="password"
+                message="*Password is required"
+                placeholder="type your password"
+                register={register}
+                errors={errors}
+              />
+            </div>
+            <Buttons
+              disabled={loading}
+              onClickhandler={() => {}}
+              className="bg-customRed font-semibold text-white w-full py-2 hover:text-slate-400 transition-colors duration-100 rounded-sm my-3"
+              type="text"
+            >
+              {loading ? <span>Loading...</span> : "LogIn"}
+            </Buttons>
+            <p className=" text-sm text-slate-700 ">
+              <Link
+                className=" underline hover:text-black"
+                to="/forgot-password"
+              >
+                Forgot Password?
+              </Link>
+            </p>
+
+            <p className="text-center text-sm text-slate-700 mt-6">
+              Don't have an account?{" "}
+              <Link
+                className="font-semibold underline hover:text-black"
+                to="/signup"
+              >
+                SignUp
+              </Link>
+            </p>
+          </form>
+    </React.Fragment>
+    ) : (
+      <React.Fragment>
+          <form
+            onSubmit={handleSubmit(onVerify2FaHandler)}
+            className="sm:w-[450px] w-[360px]  shadow-custom py-8 sm:px-8 px-4"
+          >
+            <div>
+              <h1 className="font-montserrat text-center font-bold text-2xl">
+                Verify 2FA
+              </h1>
+              <p className="text-slate-600 text-center">
+                Enter the correct code to complete 2FA Authentication
+              </p>
+
+              <Divider className="font-semibold pb-4"></Divider>
+            </div>
+
+            <div className="flex flex-col gap-2 mt-4">
+              <InputField
+                label="Enter Code"
+                required
+                id="code"
+                type="text"
+                message="*Code is required"
+                placeholder="Enter your 2FA code"
+                register={register}
+                errors={errors}
+              />
+            </div>
+            <Buttons
+              disabled={loading}
+              onClickhandler={() => {}}
+              className="bg-customRed font-semibold text-white w-full py-2 hover:text-slate-400 transition-colors duration-100 rounded-sm my-3"
+              type="text"
+            >
+              {loading ? <span>Loading...</span> : "Verify 2FA"}
+            </Buttons>
+          </form>
+        </React.Fragment>
+    )}
+    </div>);
 };
 
 export default Login;
