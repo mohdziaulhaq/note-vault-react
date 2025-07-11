@@ -8,7 +8,7 @@ const Notes = () => {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const response = await axios.get("/notes/fake");
+        const response = await axios.get("/notes");
         setNotes(response.data);
       } catch (error) {
         console.error("Error fetching mock notes:", error);
