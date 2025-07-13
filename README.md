@@ -42,9 +42,9 @@ This project empowers developers to quickly set up a secure, maintainable, and c
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Testing](#testing)
 * [Live Demo](#live-demo)
 * [Features](#features)
+* [Learnings](#learnings)
 * [Author](#author)
 * [Contributing](#contributing)
 * [License](#license)
@@ -90,15 +90,7 @@ Run the project with:
 Using npm:
 
 ```bash
-npm start
-```
-
-### Testing
-
-Note-vault-react uses the {test\_framework} test framework. Run the test suite with:
-
-```bash
-npm test
+npm run dev
 ```
 
 ## Live Demo
@@ -120,6 +112,18 @@ Visit the **Frontend** link to try the application and the **Backend** link for 
 * **JWT Authentication**: Secure user authentication system
 * **Responsive Design**: Mobile-first approach for all devices
 * **Component-Based Architecture**: Reusable and maintainable code structure
+
+## Learnings
+
+Through building Note Vault React, I gained hands-on experience in:
+
+* Implementing secure login with JWT tokens and optional 2FA.
+* Creating and managing global app state using React Context API.
+* Handling protected routes and role-based access control in React Router.
+* Designing responsive UIs using Tailwind CSS utilities.
+* Connecting React frontend with a Spring Boot backend via Axios.
+* Managing CORS issues and environment-based configuration.
+* Structuring scalable React applications using modular components.
 
 ## Author
 
