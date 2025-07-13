@@ -30,7 +30,7 @@ api.interceptors.request.use(
         if(!csrfToken){
             try{
                 const response = await axios.get(
-                    `${process.env.VITE_API_URL}/api/csrf-token`,
+                    `${import.meta.env.VITE_API_URL}/api/csrf-token`,
                     {withCredentials: true}
                 );
                 csrfToken = response.data.token;
