@@ -1,4 +1,4 @@
-import axios from "../../services/api";
+import api from "../../services/api";
 import React, { useEffect, useState } from "react";
 
 const Notes = () => {
