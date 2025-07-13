@@ -1,4 +1,4 @@
-import axios from "../../api/axios";
+import axios from "../../services/api";
 import React, { useEffect, useState } from "react";
 
 const Notes = () => {
@@ -8,7 +8,7 @@ const Notes = () => {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const response = await axios.get("/notes");
+        const response = await api.get("/notes");
         setNotes(response.data);
       } catch (error) {
         console.error("Error fetching mock notes:", error);
