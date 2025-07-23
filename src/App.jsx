@@ -9,13 +9,19 @@ import LandingPage from "./components/LandingPage";
 import Login from "./components/Auth/Login";
 import Signup from "./components/Auth/Signup";
 import ProtectedRoute from "./components/ProtectedRoute";
+import ForgotPassword from "./components/Auth/ForgotPassword";
+import ResetPassword from "./components/Auth/ResetPassword";
+import {Toaster} from "react-hot-toast";
 
 const App = () => {
   return (
     <Router>
       <Navbar />
+      <Toaster position="bottom-center" reverseOrder={false} />
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/reset-password" element={<ResetPassword />}></Route>
         <Route path="/notes" element={
           <ProtectedRoute><Notes /></ProtectedRoute>
           } />
