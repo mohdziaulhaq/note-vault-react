@@ -11,6 +11,7 @@ import Signup from "./components/Auth/Signup";
 import ProtectedRoute from "./components/ProtectedRoute";
 import ForgotPassword from "./components/Auth/ForgotPassword";
 import ResetPassword from "./components/Auth/ResetPassword";
+import OAuth2RedirectHandler from "./components/Auth/OAuth2RedirectHandler"
 import {Toaster} from "react-hot-toast";
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
          } />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/oauth2/redirect" element={<OAuth2RedirectHandler />}></Route>
       </Routes>
     </Router>
   );
